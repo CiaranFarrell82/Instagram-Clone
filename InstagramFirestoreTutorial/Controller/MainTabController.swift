@@ -22,17 +22,19 @@ class MainTabController: UITabBarController {
     func configureViewControllers() {
         view.backgroundColor = .white
         
-        let feed = templateNavigationController(unselectedImage: #imageLiteral(resourceName: "home_unselected"), selctedImage: #imageLiteral(resourceName: "home_selected"), rootViewController: FeedController())
+        let layout = UICollectionViewFlowLayout()
+        let feed = templateNavigationController(unselectedImage: #imageLiteral(resourceName: "home_unselected"), selctedImage: #imageLiteral(resourceName: "home_selected"), rootViewController: FeedController(collectionViewLayout: layout))
         
-        let search = SearchController()
+        let search = templateNavigationController(unselectedImage: #imageLiteral(resourceName: "search_unselected"), selctedImage: #imageLiteral(resourceName: "search_selected"), rootViewController: SearchController())
         
-        let imageSelector = ImageSelectorController()
+        let imageSelector = templateNavigationController(unselectedImage: #imageLiteral(resourceName: "plus_unselected"), selctedImage: #imageLiteral(resourceName: "plus_unselected"), rootViewController: ImageSelectorController())
         
-        let notification = NotificationController()
+        let notification = templateNavigationController(unselectedImage: #imageLiteral(resourceName: "like_unselected"), selctedImage: #imageLiteral(resourceName: "like_selected"), rootViewController: NotificationController())
         
-        let profile = ProfileController()
-        
+        let profile = templateNavigationController(unselectedImage: #imageLiteral(resourceName: "profile_unselected"), selctedImage: #imageLiteral(resourceName: "profile_selected"), rootViewController: ProfileController())
+         
         viewControllers = [feed, search, imageSelector, notification, profile]
+        tabBar.tintColor = .black
     }
     
     func templateNavigationController(unselectedImage: UIImage, selctedImage: UIImage, rootViewController: UIViewController) -> UINavigationController {
@@ -42,7 +44,6 @@ class MainTabController: UITabBarController {
         nav.navigationBar.tintColor = .black
         return nav
     }
-    
 }
     
 
