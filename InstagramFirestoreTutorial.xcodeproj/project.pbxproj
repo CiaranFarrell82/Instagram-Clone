@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		C660956D25599B61004F56F1 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C660956C25599B61004F56F1 /* FeedCell.swift */; };
 		C660956F25599D7E004F56F1 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C660956E25599D7E004F56F1 /* Extensions.swift */; };
+		C6656C96255C3FF300600313 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6656C95255C3FF300600313 /* LoginController.swift */; };
+		C6656C98255C401100600313 /* RegistrationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6656C97255C401100600313 /* RegistrationController.swift */; };
 		C678F489255599AE00B7051C /* MainTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C678F488255599AE00B7051C /* MainTabController.swift */; };
 		C678F48B25559CFD00B7051C /* FeedController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C678F48A25559CFD00B7051C /* FeedController.swift */; };
 		C678F48D25559D1A00B7051C /* SearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C678F48C25559D1A00B7051C /* SearchController.swift */; };
@@ -45,6 +47,8 @@
 /* Begin PBXFileReference section */
 		C660956C25599B61004F56F1 /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
 		C660956E25599D7E004F56F1 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		C6656C95255C3FF300600313 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		C6656C97255C401100600313 /* RegistrationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationController.swift; sourceTree = "<group>"; };
 		C678F488255599AE00B7051C /* MainTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabController.swift; sourceTree = "<group>"; };
 		C678F48A25559CFD00B7051C /* FeedController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedController.swift; sourceTree = "<group>"; };
 		C678F48C25559D1A00B7051C /* SearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchController.swift; sourceTree = "<group>"; };
@@ -92,6 +96,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C6656C94255C3FA300600313 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				C6656C95255C3FF300600313 /* LoginController.swift */,
+				C6656C97255C401100600313 /* RegistrationController.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
 		C6C4842A255570D700E16405 = {
 			isa = PBXGroup;
 			children = (
@@ -168,6 +181,7 @@
 		C6C4846D2555728400E16405 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				C6656C94255C3FA300600313 /* Authentication */,
 				C678F488255599AE00B7051C /* MainTabController.swift */,
 				C678F48A25559CFD00B7051C /* FeedController.swift */,
 				C678F48C25559D1A00B7051C /* SearchController.swift */,
@@ -332,6 +346,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C6C4843B255570D700E16405 /* ViewController.swift in Sources */,
+				C6656C96255C3FF300600313 /* LoginController.swift in Sources */,
 				C660956D25599B61004F56F1 /* FeedCell.swift in Sources */,
 				C678F48F25559D3800B7051C /* ImageSelectorController.swift in Sources */,
 				C678F49125559D5900B7051C /* Notificationcontroller.swift in Sources */,
@@ -342,6 +357,7 @@
 				C678F489255599AE00B7051C /* MainTabController.swift in Sources */,
 				C660956F25599D7E004F56F1 /* Extensions.swift in Sources */,
 				C6C48439255570D700E16405 /* SceneDelegate.swift in Sources */,
+				C6656C98255C401100600313 /* RegistrationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
